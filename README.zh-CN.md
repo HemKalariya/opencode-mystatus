@@ -195,12 +195,12 @@ Claude     2d 9h      ░░░░░░░░░░░░░░░░░░░�
 ## 开发
 
 ```bash
-# Using npm
+# 使用 npm
 npm install
 npm run typecheck
 npm run build
 
-# Or using Bun
+# 或使用 Bun
 bun install
 bun run typecheck
 bun run build

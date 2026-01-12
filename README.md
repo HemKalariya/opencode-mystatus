@@ -195,12 +195,12 @@ The plugin displays quota for these models:
 ## Development
 
 ```bash
-# 使用 npm
+# Using npm
 npm install
 npm run typecheck
 npm run build
 
-# 或使用 Bun
+# Or using Bun
 bun install
 bun run typecheck
 bun run build
