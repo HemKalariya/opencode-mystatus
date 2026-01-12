@@ -195,8 +195,15 @@ Claude     2d 9h      ░░░░░░░░░░░░░░░░░░░�
 ## 开发
 
 ```bash
+# Using npm
 npm install
+npm run typecheck
 npm run build
+
+# Or using Bun
+bun install
+bun run typecheck
+bun run build
 ```
 
 ### 从本地安装
