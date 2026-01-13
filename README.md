@@ -40,7 +40,7 @@ To install this plugin, perform these steps:
 
 ```json
 {
-  "plugin": ["opencode-mystatus@1.1.0"],
+  "plugin": ["opencode-mystatus"],
   "command": {
     "mystatus": {
       "description": "Query quota usage for all AI accounts",
@@ -60,7 +60,7 @@ To install this plugin, perform these steps:
 
 ```json
 {
-  "plugin": ["opencode-mystatus@1.1.0"],
+  "plugin": ["opencode-mystatus"],
   "command": {
     "mystatus": {
       "description": "Query quota usage for all AI accounts",
